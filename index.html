@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Pet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="nav__container">
+        <nav id="nav" class="container">
+            <a href="#!" id="logo">
+                <div id="logo__img">
+                    <img src="./img/nav/square.png" alt="logo box" id="logo__box">
+                    <img src="./img/nav/paw.png" alt="paw" id="logo__paw">
+                </div>
+                <div id="logo__text">HAPPY PET</div>
+            </a>
+            <div id="hamburger__menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label id="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul id="menu__box">
+                    <li><a class="menu__item" href="#!">Главная</a></li>
+                    <li><a class="menu__item" href="#">Друзья</a></li>
+                    <li><a class="menu__item" href="#">О сервисе</a></li>
+                    <li><a class="menu__item" href="#!">Контакты</a></li>
+                    <li>
+                        <a href="tel:+79045229573" class="menu__item phone__container">
+                            <img src="./img/nav/call.png" alt="phone">
+                            <div class="phone__text">+7-904-522-95-73</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!" class="bascket__mobile">
+                            <img src="./img/nav/bascket.png" alt="корзина">
+                            <div class="sum">15 252р.</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul id="nav__menu__list">
+                <li class="menu__item"><a class="menu__link" data-foo="Главная" href="#!">Главная</a></li>
+                <li class="menu__item"><a class="menu__link" data-foo="Друзья" href="#!">Друзья</a></li>
+                <li class="menu__item"><a class="menu__link" data-foo="О сервисе" href="#!">О сервисе</a></li>
+                <li class="menu__item"><a class="menu__link" data-foo="Контакты" href="#!">Контакты</a></li>
+            </ul>
+            <div class="phone">
+                <a href="tel:+79045229573" class="phone__container">
+                    <img src="./img/nav/call.png" alt="phone">
+                    <div class="phone__text">+7-904-522-95-73</div>
+                </a>
+            </div>
+            <a href="#!" class="bascket">
+                <img src="./img/nav/bascket.png" alt="корзина">
+                <div class="sum">15 252р.</div>
+            </a>
+        </nav>
+    </div>
+
+    <main id="main">
+        <div id="main__container" class="container-left">
+            <div id="main__text">
+                <div id="text__inner">
+                    <h1>Твой новый друг с доставкой на дом</h1>
+                    <div id="main__text__box">
+                        Онлайн-магазин домашних животных - подарит тебе нового друга в несколько кликов!
+                    </div>
+                    <button id="main__btn" class="btn">
+                        Посмотреть друзей
+                    </button>
+                </div>
+            </div>
+            <div id="main__img">
+                <div id="cat__light"></div>
+                <div id="dog__light"></div>
+                <div id="cat__image"></div>
+                <div id="dog__image"></div>
+            </div>
+        </div>
+    </main>
+
+    <div id="carousel__mini__container" class="container">
+        <div id="carousel__mini__box">
+            <button class="btn__mini__slider" id="btn__mini__slider__left" @click="miniSliderDown"
+                :disabled="btnLeftDisable" v-if="bigWindows">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_25_11)">
+                        <circle cx="17" cy="13" r="13" fill="white" />
+                        <path d="M20.0333 6.27586L13.5333 13.4483L20.0333 20.1724" stroke="black" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_25_11" x="0" y="0" width="34" height="34" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_25_11" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_25_11" result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+            </button>
+            <button class="btn__mini__slider" id="btn__mini__slider__left" @click="miniSliderDown"
+                :disabled="btnLeftDisable" v-else="bigWindows">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_25_11)">
+                        <circle cx="17" cy="13" r="13" fill="white" />
+                        <circle cx="17" cy="13" r="12.5" stroke="black" />
+                    </g>
+                    <path d="M20.0333 6.27586L13.5333 13.4483L20.0333 20.1724" stroke="black" />
+                    <defs>
+                        <filter id="filter0_d_25_11" x="0" y="0" width="34" height="34" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_25_11" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_25_11" result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+            </button>
+            <div id="btn__container" @mouseup="dragRunnerStop($event)" @mousemove="dragRunner($event)"
+                @mouseleave="dragLeave($event)" :style="{width: btnContainerWidth + 'px'}">
+                <ul id="caousel__mini__inner">
+                    <li v-for="(slideItem, index) in slideOrder" :key="index"
+                        :style="{left: slideItem.left + 'px', transition: sliderBoxTransition}" class="slider__box">
+                        <a href="#!" class="slide__mini" v-if="slideItem.visible">
+                            <div class="slide__mini__name">
+                                <div class="slide__mini__description">{{slideItem.name}}</div>
+                                <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 6H14.5M14.5 6L10.5 1M14.5 6L10.5 11" stroke="black" />
+                                </svg>
+                            </div>
+                            <img class="mini__carousel__img" :src="'./img/carousel_mini/' + slideItem.img"
+                                :alt="slideItem.name">
+                        </a>
+                    </li>
+                </ul>
+
+
+                <div id="scroll__container" :style="{width: scrollWidth + 'px'}">
+                    <div id="scroll" @click="onScrollClick($event)"></div>
+                    <div id="runner" @mousedown="dragRunnerStart($event)" :style="{left: runnerCoordX + 'px', 
+                width: runnerWidth + 'px', 
+                transition: runnerTransition}"></div>
+                </div>
+            </div>
+
+            <button class="btn__mini__slider" id="btn__mini__slider__right" @click="miniSliderUp"
+                :disabled="btnRightDisable" :style="{left: btnMiniSliderRight + 'px'}" v-if="bigWindows">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_25_10)">
+                        <circle cx="17" cy="13" r="13" fill="white" />
+                        <path d="M15.005 20.2443L20.7058 12.7802L14.4349 6.25594" stroke="black" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_25_10" x="0" y="0" width="34" height="34" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_25_10" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_25_10" result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+            </button>
+            <button class="btn__mini__slider" id="btn__mini__slider__right" @click="miniSliderUp"
+                :disabled="btnRightDisable" :style="{left: btnMiniSliderRight + 'px'}" v-else="bigWindows">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_25_10)">
+                        <circle cx="17" cy="13" r="12.5" fill="white" stroke="black" />
+                        <path d="M15.005 20.2443L20.7058 12.7802L14.4349 6.25594" stroke="black" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_25_10" x="0" y="0" width="34" height="34" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_25_10" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_25_10" result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+            </button>
+        </div>
+
+    </div>
+
+    <section class="container" id="whychoose">
+        <h2>Почему выбирают наших друзей</h2>
+        <div id="reasons">
+            <div id="reasons__box">
+                <div class="reasons__inner__box">
+                    <div class="reason__container" id="reason__a__lot__of">
+                        <div class="reason__img" id="lot__of__them">
+                            <img src="./img/whychoose/dog.png" alt="dog">
+                        </div>
+                        <div class="reasons__text">
+                            <p>Их много</p>
+                            <span>Огромный выбор животных, птиц, и питомцев</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reasons__inner__box">
+                    <div class="reason__container" id="reason__healthy">
+                        <div class="reason__img" id="they__are__healthy">
+                            <img src="./img/whychoose/first-aid.png" alt="first-aid">
+                        </div>
+                        <div class="reasons__text">
+                            <p>Они здоровы</p>
+                            <span>Мы забоотимся о каждом питомце, который с нами</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reasons__inner__box" id="reason__loved">
+                    <div class="reason__container">
+                        <div class="reason__img" id="they__are__loved">
+                            <img src="./img/whychoose/handshake.png" alt="handshake">
+                        </div>
+                        <div class="reasons__text">
+                            <p>Их любят</p>
+                            <span>Мы окружаем любовью и вниманием наших друзей</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="catalog" class="container">
+        <div class="catalog__inner">
+            <div class="catalog__btn__carousel" id="catalog__btn__right" @click="catalogBtnRightClick"></div>
+            <div class="catalog__btn__carousel" id="catalog__btn__left" @click="catalogBtnLeftClick"></div>
+            <h2>Каталог животных</h2>
+            <div id="catalog__btn__container">
+                <div class="btn catalog__btn" id="catalog__btn1">Все</div>
+                <div class="btn catalog__btn" id="catalog__btn2">Кошки</div>
+                <div class="btn catalog__btn" id="catalog__btn3">Собаки</div>
+                <div class="btn catalog__btn" id="catalog__btn4">Попугаи</div>
+                <div class="btn catalog__btn" id="catalog__btn5">Хомяки</div>
+            </div>
+            <div id="catalog__slider__box">
+
+            </div>
+
+            <div id="catalog__carousel__box">
+                <div id="catalog__carousel">
+                    <div class="catalog__carousel__slide__box" v-for="(slideData, index) in slideData" :key="index"
+                        :style="{width: catalogSlideWidth + 'px', left: slideData.left + 'px'}"
+                        :class="{no__animation: !slideData.animation}">
+                        <div class="catalog__carousel__slide" v-if="slideData.visible">
+                            <div class="card__icons__box">
+                                <div class="card__icons">
+                                    <div class="card__icons__age">
+                                        <div class="icon__age__number">{{slideData.ageNumber}}</div>
+                                        <div class="icon__age__month">{{slideData.ageMonth}}</div>
+                                    </div>
+                                    <div class="card__icons__habits">
+                                        <img src="./img/catalog_carousel/bowl.png" alt="мисочка">
+                                        <img src="./img/catalog_carousel/tray.png" alt="лоточек" class="tray__icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card__foto__box"
+                                :style="{'background-image': 'url(./img/catalog_carousel/animals/' + slideData.picture + ')'}">
+                            </div>
+                            <div class="animal__name">{{slideData.name}}</div>
+                            <div class="animal__description">{{slideData.description}}</div>
+                            <div class="animal__division">
+                                <div class="animal__kind">
+                                    <div class="circle"></div>
+                                    <div class="name__of__kind">{{slideData.kind}}</div>
+                                    <div class="spice__circle"></div>
+                                    <div class="spice__name">{{slideData.spice}}</div>
+                                </div>
+                            </div>
+                            <div class="card__bottom">
+                                <div class="animal__price">{{slideData.price + ' р.'}}</div>
+                                <img src="./img/catalog_carousel/paw.png" alt="лапка">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="catalog__carousel__indicator__container">
+                    <div id="catalog__carousel__indicator__box">
+                        <div v-for="(indicator, index) in slideList" class="indicator__circle"
+                            :class="{circle__active: index === circleActive}" :key="index"
+                            @click="indicatorClick(index)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="play" class="container">
+        <h2>Мы любим поиграть</h2>
+        <div id="play_picture">
+            <ul id="play__inner">
+                <div class="play__item" v-for="(picture, index) in pictures" :key="index"
+                    :id="'play__pic' + (index + 1)" :style="{'background-image': 'url(./img/play/' + picture + ')'}"
+                    @click="viewerClick(index)"></div>
+            </ul>
+        </div>
+        <div id="image__preview" v-if="preview" @click="viewerOn">
+            <div id="preview__border" :style="{width: (picWidth + 10) + 'px', 
+            height: (picHeight + 10) + 'px', left: (picLeft - 5) + 'px',
+        top: (picTop - 5) + 'px', visibility: borderVisibility}">
+                <img :src="'./img/play/' + picName" id="preview__pic" ref="imagePreview"
+                    :style="{width: picWidth + 'px', height: picHeight + 'px', left: picLeft + 'px', top: picTop + 'px'}">
+            </div>
+        </div>
+    </section>
+    <script src="./js/vue.global.js"></script>
+    <script src="./js/carousel-mini.js"></script>
+    <script src="./js/catalog-carousel.js"></script>
+    <script src="./js/viewer.js"></script>
+</body>
+
+</html>
