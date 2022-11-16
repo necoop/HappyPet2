@@ -17,12 +17,12 @@
 <body>
     <div id="nav__container">
         <nav id="nav" class="container">
-            <a href="#!" id="logo">
-                <div id="logo__img">
-                    <img src="./img/nav/square.png" alt="logo box" id="logo__box">
-                    <img src="./img/nav/paw.png" alt="paw" id="logo__paw">
+            <a href="#!" class="logo">
+                <div class="logo__img">
+                    <img src="./img/nav/square.png" alt="logo box" class="logo__box">
+                    <img src="./img/nav/paw.png" alt="paw" class="logo__paw">
                 </div>
-                <div id="logo__text">HAPPY PET</div>
+                <div class="logo__text">HAPPY PET</div>
             </a>
             <div id="hamburger__menu">
                 <input id="menu__toggle" type="checkbox" />
@@ -388,6 +388,70 @@
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div id="footer__top" class="container">
+            <div id="footer__inner">
+                <ul id="footer__nav">
+                    <li class="footer__item" id="footer__item1">
+                        <a href="#!" class="logo">
+                            <div class="logo__img">
+                                <img src="./img/nav/square.png" alt="logo box" class="logo__box">
+                                <img src="./img/nav/paw.png" alt="paw" class="logo__paw">
+                            </div>
+                            <div class="logo__text">HAPPY PET</div>
+                        </a>
+                    </li>
+                    <li class="footer__item" id="footer__item2">
+                        <a href="#!">Главная</a>
+                    </li>
+                    <li class="footer__item" id="footer__item3">
+                        <a href="#1">Друзья</a>
+                    </li>
+                    <li class="footer__item" id="footer__item4">
+                        <a href="#!">О сервисе</a>
+                    </li>
+                    <li class="footer__item" id="footer__item5">
+                        <a href="#!">Контакты</a>
+                    </li>
+                </ul>
+                <img src="./img/footer/footer_img.png" alt="footer_img" id="footer__img">
+                <div id="search__field">
+                    <form action="#!" method="get" id="search__box">
+                        <input type="text" name="search" id="search__text">
+                        <button type="submit" id="search__btn">
+                            <img src="./img/footer/Search.svg" alt="Искать">
+                        </button>
+                    </form>
+                </div>
+                <ul id="messengers">
+                    <li class="messenger__item">
+                        <a href="whatsapp://send?phone=79853601178">
+                            <img src="./img/footer/WhatsApp.svg" alt="whatsup">
+                        </a>
+                    </li>
+                    <li class="messenger__item">
+                        <a href="mailto:marena46@yandex.ru">
+                            <img src="./img/footer/Mail.svg" alt="эл. почта">
+                        </a>
+                    </li>
+                    <li class="messenger__item">
+                        <a href="tel:+79045229573">
+                            <img src="./img/footer/Phone.svg" alt="телефон">
+                        </a>
+                    </li>
+                    <li class="messenger__item">
+                        <a
+                            href="https://yandex.ru/maps/?um=constructor%3Ac005d460a5a1e13efd95a0239b45283eb8ee67f9de777b487e6bd37ff0aaa547&source=constructorLink">
+                            <img src="./img/footer/Address.svg" alt="карта">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer__bottom">
+            ©   Marena46 & Ko
+        </div>
+    </footer>
     <script src="./js/vue.global.js"></script>
     <script src="./js/carousel-mini.js"></script>
     <script src="./js/catalog-carousel.js"></script>
