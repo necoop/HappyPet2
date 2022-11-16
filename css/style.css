@@ -1083,7 +1083,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
-  padding-left: 150px;
+  padding-left: 6vw;
 }
 #messengers img {
   width: 50px;
