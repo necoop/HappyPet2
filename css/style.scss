@@ -1077,8 +1077,8 @@ h2 {
 }
 .footer__item {
   a {
-    font-weight: 800;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 20px;
     line-height: 60px;
     color: #000000;
   }
@@ -1112,6 +1112,9 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  img {
+    width: 50px;
+  }
 }
 #footer__bottom {
   margin-top: 39px;
@@ -1167,7 +1170,7 @@ h2 {
     align-items: start;
     grid-column: 1/1;
     a {
-      font-weight: 800;
+      font-weight: 500;
       font-size: 16px;
       line-height: 68px;
     }

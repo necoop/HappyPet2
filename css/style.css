@@ -1043,8 +1043,8 @@ h2 {
 }
 
 .footer__item a {
-  font-weight: 800;
-  font-size: 24px;
+  font-weight: 500;
+  font-size: 20px;
   line-height: 60px;
   color: #000000;
 }
@@ -1083,6 +1083,9 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+}
+#messengers img {
+  width: 50px;
 }
 
 #footer__bottom {
@@ -1136,7 +1139,7 @@ h2 {
     grid-column: 1/1;
   }
   #footer__nav a {
-    font-weight: 800;
+    font-weight: 500;
     font-size: 16px;
     line-height: 68px;
   }
