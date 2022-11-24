@@ -5,6 +5,7 @@
   font-size: $fontsizeH1;
   line-height: $fontsizeH1 * calc(78px / 64px);
 }
+
 @mixin fsSpan($fontsizeH1) {
   font-size: $fontsizeH1 * calc(32px / 64px);
   line-height: $fontsizeH1 * calc(39px / 64px);
