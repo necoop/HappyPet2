@@ -159,35 +159,6 @@ const carousel__mini = Vue.createApp({
     dragLeave(event) {
       this.drag = false;
     },
-    // onScrollClick(event) {
-    //   if (event.offsetX - this.runnerWidth / 2 < 0) {
-    //     this.runnerCoordX = 0;
-    //   } else if (event.offsetX + this.runnerWidth / 2 > this.scrollWidth) {
-    //     this.runnerCoordX = this.scrollWidth - this.runnerWidth;
-    //   } else {
-    //     this.runnerCoordX = event.offsetX - this.runnerWidth;
-    //   }
-
-    //   let newCoord = 0;
-    //   for (let i = 0; i < this.slideOrder.length; i++) {
-    //     if (
-    //       Math.abs(
-    //         (i * (this.scrollWidth - this.runnerWidth)) /
-    //           (this.slideOrder.length - 1) -
-    //           (event.offsetX - this.runnerWidth / 2)
-    //       ) <
-    //       (this.scrollWidth - this.runnerWidth) /
-    //         (this.slideOrder.length - 1) /
-    //         2
-    //     ) {
-    //       newCoord =
-    //         (i * (this.scrollWidth - this.runnerWidth)) /
-    //         (this.slideOrder.length - 1);
-    //       break;
-    //     }
-    //   }
-    //   this.runnerCoordX = newCoord;
-    // },
   },
   watch: {
     drag(dragStatus) {
